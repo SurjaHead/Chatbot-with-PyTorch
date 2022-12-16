@@ -31,7 +31,7 @@ tags = sorted(set(tags))  #adds unique labels (not necessary but do it in to be 
 X_train = []
 y_train = []
 for (pattern_sentence, tag) in xy:
-    bag = bag_of_words(pattern_sentence, all_words) # we are checking if the words in each sentence appear in any other sentences in the pattern, since they'll have similar words
+    bag = bag_of_words(pattern_sentence, all_words) 
     X_train.append(bag)
 
     label = tags.index(tag)
