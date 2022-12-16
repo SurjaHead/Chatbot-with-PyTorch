@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-
+# creating the neural network that we'll use to train the data
 class NeuralNet(nn.Module):
     def __init__(self, input_size, hidden_size, num_classes):
         super(NeuralNet, self).__init__()
