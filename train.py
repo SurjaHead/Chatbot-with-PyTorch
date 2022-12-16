@@ -19,14 +19,14 @@ for intent in intents['intents']:
     tags.append(tag)
     for pattern in intent['patterns']:
         w = tokenize(pattern)  # tokenizing all words in the patterns (potential questions)
-        all_words.extend(w)  
+        all_words.extend(w)  # we use extend instead of append because pattern is already an array and we don't want to put an array in an array
         xy.append((w, tag))
     
 ignore_words = ['?', '!', '.', ',']
 all_words = [stem(w) for w in all_words if w not in ignore_words] #stemming all the words and ignoring punctuation 
 all_words = sorted(set(all_words))  # using set() removes duplicate elements
 tags = sorted(set(tags))  #adds unique labels (not necessary but do it in to be safe) 
-# print(tags)
+
 
 X_train = []
 y_train = []
