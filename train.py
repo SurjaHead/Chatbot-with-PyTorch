@@ -19,7 +19,7 @@ for intent in intents['intents']:
     tags.append(tag)
     for pattern in intent['patterns']:
         w = tokenize(pattern)  # tokenizing all words in the patterns (potential questions)
-        all_words.extend(w)  # we use extend instead of append because pattern is already an array and we don't want to put an array in an array
+        all_words.extend(w)  
         xy.append((w, tag))
     
 ignore_words = ['?', '!', '.', ',']
