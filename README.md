@@ -104,4 +104,4 @@ This will load the trained model and allow you to interact with the chatbot. Typ
 
 ## Acknowledgments
 
-- This README was created using [gitreadme.dev](https://gitreadme.dev) — an AI tool that looks at your entire codebase to instantly generate high-quality README files.
+- This project was created by following Patrick Lober's "Chatbot with Pytorch" tutorial on Youtube. Check it out [here](https://www.youtube.com/watch?v=RpWeNzfSUHw).
